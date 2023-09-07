@@ -1,0 +1,9 @@
+dependencies {
+    api(project(":spring-boot-autoconfigure-data-jdbc-plus"))
+    api(project(":spring-data-jdbc-plus-sql"))
+    api("org.springframework.boot:spring-boot-starter-jdbc")
+
+    implementation("org.springframework.data:spring-data-jdbc:${springDataVersion}")
+    implementation("org.springframework.data:spring-data-relational:${springDataVersion}")
+    implementation("org.springframework.data:spring-data-commons:${springDataCommonsVersion}")
+}
